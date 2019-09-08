@@ -1,4 +1,4 @@
-import { FlyBehavior } from "../interfaces";
+import FlyBehavior from "../interfaces/FlyBehavior";
 
 export default class FlyNoWay implements FlyBehavior {
   fly(){
@@ -6,6 +6,6 @@ export default class FlyNoWay implements FlyBehavior {
   }
 
   flyNoWay(){
-    return 'Fly No Way'
+    console.log('Fly No Way');
   }
 }

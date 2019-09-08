@@ -1,4 +1,4 @@
-import { QuackBehavior } from "../interfaces";
+import QuackBehavior from "../interfaces/QuackBehavior";
 
 export default class Quack implements QuackBehavior {
   quack() {
@@ -6,6 +6,6 @@ export default class Quack implements QuackBehavior {
   }
 
   realQuack() {
-    return "Real Duck Quacking";
+    console.log("Quack");
   }
 }

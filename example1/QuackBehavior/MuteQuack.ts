@@ -1,4 +1,4 @@
-import { QuackBehavior } from "../interfaces";
+import QuackBehavior from "../interfaces/QuackBehavior";
 
 export default class MuteQuack implements QuackBehavior {
   quack() {
@@ -6,6 +6,6 @@ export default class MuteQuack implements QuackBehavior {
   }
 
   muteQuack() {
-    return "Can't quack";
+    console.log("Can't quack");
   }
 }
