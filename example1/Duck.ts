@@ -1,5 +1,5 @@
-import FlyBehavior from "./example1/interfaces/FlyBehavior";
-import QuackBehavior from "./example1/interfaces/QuackBehavior";
+import FlyBehavior from "./interfaces/FlyBehavior";
+import QuackBehavior from "./interfaces/QuackBehavior";
 
 export default abstract class Duck {
   flyBehavior: FlyBehavior;
@@ -19,5 +19,12 @@ export default abstract class Duck {
   swim() {
     console.log("All ducks float, even decoys!");
   }
-}
 
+  setFlyBehavior(fb: FlyBehavior) {
+    this.flyBehavior = fb;
+  }
+
+  setQuackingBehavior(qb: QuackBehavior) {
+    this.quackBehavior = qb;
+  }
+}
