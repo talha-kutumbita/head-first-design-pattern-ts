@@ -37,6 +37,7 @@ export class WeatherData implements ISubject {
     this.temp = temp;
     this.humidity = humidity;
     this.pressure = pressure;
+    this.measurementChanged();
   }
 
   getTemp() {

@@ -1,19 +1,9 @@
 import { WeatherData } from "./WeatherData";
+import { CurrentConditionDisplay } from "./displays/CurrentConditionsDisplay";
 
 const weatherData = new WeatherData();
-const obs1 = {
-  update: () => {},
-  name: 'display1'
-};
-const obs2 = {
-  update: () => {},
-  name: 'display2'
-};
+const currentDisplay:CurrentConditionDisplay = new CurrentConditionDisplay(weatherData);
 
-weatherData.registerObserver(obs1);
-weatherData.registerObserver(obs2);
-console.log(weatherData.getObserver());
-weatherData.removeObserver(obs2);
-console.log(weatherData.getObserver());
-weatherData.removeObserver(obs1);
-console.log(weatherData.getObserver());
+weatherData.setMeasurement(80, 65, 30.4);
+weatherData.setMeasurement(82, 70, 29.2);
+weatherData.setMeasurement(78, 90, 30.8);
