@@ -1,6 +1,5 @@
 import { Housing } from "./Housing";
 import { Room } from "./Room";
-import { IStructure } from "./IStructure";
 
 const building: Housing = new Housing("123 Street");
 const floor1: Housing = new Housing("123 Street - First Floor");
